@@ -4,9 +4,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina 45</title>
+    <title>Pagina Prueba</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <header>
+
+
+           <div class="menu container">
+
+                  <a href="#" class="logo">Menu</a> 
+                  <input type="checkbox" id="menu">
+                 <label for="menu"><img class="menu-icono" src="imagens/1.jpg" alt=""></label>
+               <nav class="navbar">
+                   <ul>
+
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="#services">Servicios</a></li>
+                  <li><a href="#contact">Contacto</a></li>
+                </ul>
+               </nav>
+               
+                </div>
+               <div class="header-text">
+                  <h1> Titulo </h1>
+                  <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente id expedita sequi quas a, commodi earum nobis quo iure laudantium quaerat saepe doloremque libero fugit enim dolore, perferendis nesciunt delectus.</P>
+                    <br>
+                  <a href="#" class="btn-1">Registrarse</a>
+
+               </div>
+
+
+         
+    </header>
+
+    <section class="seccion-img">
+
+      <img src="imagens/2.jpg" alt="">
+
+    </section>
+
+    <main class="services container" id="services">
+
+        <h2>Servicios</h2>
+        <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit praesentium nisi esse sit aspernatur alias aliquid quisquam possimus maxime! Illum tempora provident recusandae accusantium, cupiditate nisi. Excepturi amet dolor iure!</p>
+
+         
+            <footer id="contact">
+                <h3>Correo</h3>
+                <p>Dudas? Inquietudes? </p>
+                <div class="f-container">
+                <div class="ft-a">
+                   
+                </div>
+            
+            </footer>
 </body>
 </html>
+<style>
+    * { 
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+        text-decoration: none;
+
+
+}
+header{
+           background-image: url(images/header.jpg);
+           background-position: center center;
+           background-repeat: no-repeat;
+           background-size: cover;
+           height: 102vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+ }
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+ }
+
+ .menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+ 
+ }
+ .menu .logo { 
+    font-weight: bold;
+   font-size: 25px;
+   color: antiquewhite;
+
+  }
+.menu .navbar ul {
+    list-style: none;
+
+
+ }
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a { 
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+
+
+ }
+.menu .navbar ul li a:hover { 
+    color: rgb(34, 114, 25);
+
+ }
+
+ #menu {
+    display: none;
+  }
+.menu-icono {
+    width: 25px;
+ }
+
+.menu label { 
+    cursor: pointer;
+    display: none;
+}
+
+.header-text { 
+    margin-top: -40px;
+    text-align: center;
+    width: 700px;
+
+}
+
+.header-text h1 {
+ color: rgb(228, 222, 222);
+ font-size: 45px;
+
+ }
+ .header-text p {
+    margin-top: 35px;
+    color: antiquewhite;
+
+  }
+  footer { 
+    background-image: url(images/footer.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+
+}
+
+.ft {
+    padding: 100px 0px;
+    display: flex;
+ }
+
+.ft-a li {
+    list-style: none;
+ }
+
+
+
+
+</style>
