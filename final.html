@@ -10,30 +10,17 @@
 
 
 
-    <div class="menu container">
-
-           <a href="#" class="logo">Menu</a> 
-           <input type="checkbox" id="menu">
-          <label for="menu"></label>
-        <nav class="navbar">
-            <ul>
-
-           <li><a href="#">Inicio</a></li>
-           <li><a href="#services">Contenido</a></li>
-           <li><a href="#contact">Creditos</a></li>
-         </ul>
-        </nav>
+   <section>
         
          </div>
         <div class="header-text">
-           <h1> Titulo Principal</h1>
-           <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente id expedita sequi quas a, commodi earum nobis quo iure laudantium quaerat saepe doloremque libero fugit enim dolore, perferendis nesciunt delectus.</P>
-             <br>
-           <a href="registro.html" class="btn-1">Registrarse</a>
+           <h1> Se Ha Registrado Correctamente!</h1>
+           <a href="pagina.html"><input class="botonsw" type="submit" value="Volver a la pagina Principal"></a>
+         
 
         </div>
 
-
+      </section>
   
 </header>
 <footer id="contact">
@@ -61,15 +48,143 @@ header{
            display: flex;
            align-items: center;
            justify-content: center;
+ }
+ .btn-1 { 
+    display: inline-block;
+    background-color: rgb(48, 201, 221);
+    margin-top: 35px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: antiquewhite;
 
 }
-footer { 
+
+
+
+   
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+ }
+
+ .menu {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+ 
+ }
+ .menu .logo { 
+    font-weight: bold;
+   font-size: 25px;
+   color: antiquewhite;
+
+  }
+.menu .navbar ul {
+    list-style: none;
+
+
+ }
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a { 
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+
+
+ }
+.menu .navbar ul li a:hover { 
+    color: rgb(34, 114, 25);
+
+ }
+
+ #menu {
+    display: none;
+  }
+.menu-icono {
+    width: 25px;
+ }
+
+.menu label { 
+    cursor: pointer;
+    display: none;
+}
+
+.header-text { 
+    margin-top: -40px;
+    text-align: center;
+    width: 700px;
+
+}
+
+.header-text h1 {
+ color: rgb(228, 222, 222);
+ font-size: 45px;
+
+ }
+ .header-text p {
+    margin-top: 35px;
+    color: antiquewhite;
+
+  }
+  footer { 
     background-image: url(images/footer.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;
 
+}
+
+.ft {
+    padding: 100px 0px;
+    display: flex;
+ }
+
+.ft-a li {
+    list-style: none;
+ }
+ .form-text{ 
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 74px 500px;
+    
+}
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.form-register .botonsw{
+  width: 100%;
+  background: hsl(180, 57%, 30%);
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
 }
 </style>
     
