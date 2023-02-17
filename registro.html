@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulario </title>
 </head>
 <body>
-    
-    
+  <section class="form-register">
+    <h4>Formulario </h4>
+    <p>Ingrese su Nombre</p>
+    <input class="controls" type="text" name="nombres" id="nombres" >
+    <p>Ingrese su Apellido</p>
+    <input class="controls" type="text" name="apellidos" id="apellidos">
+    <p>Ingrese su Correo</p>
+    <input class="controls" type="email" name="correo" id="correo">
+    <p>Ingrese su Contraseña</p>
+    <input class="controls" type="password" name="correo" id="correo" >
+    <p>Ingrese su direccion</p>
+    <input class="controls" type="direccion" name="direccion" id="direccion" >
+    <input class="botons" type="submit" value="Registrarse">
+  </section>
+
 </body>
 </html>
+
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('fondo.jpg');
+}
+
+.form-register {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #030808;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #01d6dd;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #1fc5b7;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+</style>
